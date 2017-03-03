@@ -20,11 +20,11 @@ Duck {
 1. 并不是所有的鸭子都会飞
 2. 鸭子的叫声有：呱呱(quack)、吱吱(squeak)  
 
-###错误的做法
-1. 在Duck中添加方法fly()  
-2. 抽出两个接口Flyable, Quackable
-  
-###上述的做法存在的问题：
+###错误的解决办法
+办法1：在Duck中添加方法fly()，然后所有鸭子继承Duck  
+办法2：抽出两个接口Flyable, Quackable，所有鸭子根据属性选择实现这两个接口与否
+  
+###上述的两个办法存在的问题：
 - 代码在多个子类中重复
 - 很难知道所有鸭子的全部行为
 - 运行时的行为不容易改变
@@ -32,24 +32,13 @@ Duck {
 
 ##解决办法：采用策略模式（Strategy Pattern）
 **策略模式：策略模式定义了算法族，分别封装起来，让它们之间可以互相替换，此模式让算法的变化独立于使用算法的客户。**
+![](https://github.com/linpeiyou/design-patterns-java/blob/master/strategy/image/1.jpg)
+
+###运行结果：
+![](https://github.com/linpeiyou/design-patterns-java/blob/master/strategy/image/2.jpg)
 
 ###三个设计原则
 1. 找出应用中可能需要变化之处，把它们独立出来，不要和那些不需要变化的代码混在一起
 2. 针对接口编程，而不是针对实现编程
 3. 少用组合，多用继承
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
