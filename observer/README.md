@@ -6,7 +6,7 @@
 - 气象站必须建立在Weather公司专利申请的WeatherData对象上，WeatherData对象负责追踪目前的天气状况（温度、湿度、气压）
 - 你的团队要建立一个应用，有**三种布告板**，分别显示：目前的状况、气象统计、简单的预报，要求实时更新
 - **这是一个可扩展的气象站，要公布一组API，让其他开发人员可以写出自己的气象布告板，并插入此应用中**
-![](1.png)
+![](https://github.com/linpeiyou/design-patterns-java/blob/master/observer/image/1.png)
 
 ###我们的工作
 建立一个应用，利用WeatherData对象取得数据，并更新三个布告板：目前状况、气象统计、天气预报。并提供一组API，让其他开发人员可以写出自己的气象布告板。
@@ -65,10 +65,10 @@ public class WeatherData {
 
 ###出版者+订阅者=观察者模式
 在软件工程中，出版者改称为“主题”（Subject），订阅者改称为“观察者”（Observer）。
-![](2.png)
+![](https://github.com/linpeiyou/design-patterns-java/blob/master/observer/image/2.png)
 
 ###类图
-![](3.png)
+![](https://github.com/linpeiyou/design-patterns-java/blob/master/observer/image/3.png)
 
 ###松耦合的威力
 **当两个对象之间松耦合，它们依然可以交互，但是不太清楚彼此的细节。**  
@@ -82,7 +82,7 @@ public class WeatherData {
 
 ##气象站问题——解决办法：采用观察者（Observer Pattern）
 ###观察者模式：观察者模式定义了对象之间的一对多依赖，这样一来，当一个对象改变状态时，它的所有依赖者都会受到通知并自动更新
-![](4.png)
+![](https://github.com/linpeiyou/design-patterns-java/blob/master/observer/image/4.png)
 
 ###接口设计
 ```
@@ -127,7 +127,7 @@ notifyObservers() {
 ```
 
 ###运行结果：
-![](5.png)
+![](https://github.com/linpeiyou/design-patterns-java/blob/master/observer/image/5.png)
 
 ###设计原则
 1. 找出应用中可能需要变化之处，把它们独立出来，不要和那些不需要变化的代码混在一起
