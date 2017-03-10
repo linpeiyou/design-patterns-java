@@ -4,4 +4,4 @@
 ###Java I/O类（装饰者模式）
 ![](https://github.com/linpeiyou/design-patterns-java/blob/master/decorator/image/java_io_uml.png)
 ###运行结果
-![](https://github.com/linpeiyou/design-patterns-java/blob/master/decorator/image/result.png)
+![](https://github.com/linpeiyou/design-patterns-java/blob/master/decorator/image/result.jpg)
